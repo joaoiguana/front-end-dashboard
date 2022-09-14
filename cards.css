@@ -1,0 +1,177 @@
+
+
+/* Shared Components */
+
+/* Layout Components */
+
+
+
+/* Card Component */
+
+
+/* Bespoke Card Styles */
+
+/* Card Headline */
+
+.card-headline-icon {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  /* height: 3.5rem; */
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-headline1 {
+  grid-area: headline1;
+}
+
+.card-headline2 {
+  grid-area: headline2;
+}
+
+/* @media only screen and (min-width: 800px) {
+  .card-headline {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .card-headline {
+    width: 25%;
+  }
+} */
+
+/* Card List */
+
+.card-list {
+  grid-area: list;
+  display: flex;
+  gap: 1.75rem;
+}
+/*
+@media only screen and (min-width: 800px) {
+  .card-list {
+    width: 50%;
+  }
+} */
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-list-badge {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.card-list-badge.primary {
+  background: var(--color-primary);
+}
+
+.card-list-badge.accent {
+  background: var(--color-accent);
+}
+
+.card-list-badge.default {
+  background: var(--color-default);
+}
+
+/* Card Progress */
+
+.card-progress {
+  grid-area: engagement;
+  text-align: center;
+}
+
+/* @media only screen and (min-width: 800px) {
+  .card-progress {
+    width: 25%;
+    order: 1;
+  }
+} */
+
+.card-progress-donut {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--color-primary) 0% 33%,
+    var(--color-default) 33% 100%
+  );
+}
+
+.card-progress-donut::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  border-radius: inherit;
+  background: var(--color-card);
+}
+
+/* Growth Card */
+
+.card-growth {
+  grid-area: growth;
+  text-align: center;
+}
+
+/* @media only screen and (min-width: 800px) {
+  .card-growth {
+    width: 50%;
+    order: 2;
+  }
+} */
+
+.card-growth-headlines {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Regions Card */
+.card-regions {
+  grid-area: regions;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+/* @media only screen and (min-width: 800px) {
+  .card-regions {
+    width: 25%;
+    order: 3;
+  }
+} */
+
+/* Author and Activity Cards */
+
+/* @media only screen and (min-width: 800px) {
+  .card-author,
+  .card-activity {
+    width: 50%;
+  }
+} */
+
+.card-authors {
+  grid-area: authors;
+}
+
+.card-activity {
+  grid-area: activity;
+}
