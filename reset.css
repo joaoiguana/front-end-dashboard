@@ -12,9 +12,21 @@
   --color-label: #aaaaaa;
   --color-disabled: #888888;
 
+  --length-sm1: 0.3rem;
+  --length-sm2: 0.6rem;
+  --length-sm3: 0.8rem;
+
   --length-md1: 1rem;
-  --length-md2: 1.25rem;
-  --length-md3: 1.5rem;
+  --length-md2: 1.4rem;
+  --length-md3: 1.8rem;
+
+  --length-lg1: 2rem;
+  --length-lg2: 3rem;
+  --length-lg3: 4rem;
+
+  --length-xl1: 6rem;
+  --length-xl2: 8rem;
+  --length-xl3: 10rem;
 }
 
 /* Reset */
@@ -29,4 +41,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
 }

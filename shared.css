@@ -1,11 +1,11 @@
 .card {
-  padding: 1rem;
+  padding: var(--length-md1);
   background: var(--color-card);
-  border-radius: 1rem;
+  border-radius: var(--length-md1);
 }
 
 .card.has-extra-padding {
-  padding: 2rem 1.5rem;
+  padding: var(--length-lg1) var(--length-md3);
 }
 
 .card-header {
@@ -15,12 +15,12 @@
 }
 
 .card-header-icon {
-  font-size: 1.25rem;
+  font-size: var(--length-md2);
 }
 
 .card-h4 {
   margin-bottom: 4px;
-  font-size: 0.75rem;
+  font-size: var(--length-sm3);
   font-weight: 400;
   color: var(--color-label);
 }
@@ -28,7 +28,7 @@
 .card-h3 {
   margin-bottom: var(--length-md1);
   color: var(--color-label);
-  font-size: 1rem;
+  font-size: var(--length-md1);
   font-weight: 500;
 }
 
@@ -37,12 +37,12 @@
 }
 
 .card-h2 {
-  font-size: 1.75rem;
+  font-size: var(--length-md3);
   font-weight: 500;
 }
 
 .card-h2.has-bottom-margin {
-  margin-bottom: 2rem;
+  margin-bottom: var(--length-lg1);
 }
 
 /* Bar Chart */
@@ -50,9 +50,9 @@
 .card-bar-chart {
   display: flex;
   justify-content: space-evenly;
-  gap: 1rem;
+  gap: var(--length-md1);
   align-items: flex-end;
-  height: 8rem;
+  height: var(--length-xl2);
   background: repeating-linear-gradient(
     rgba(255, 255, 255, 0.075) 0% 0.5%,
     transparent 0.5% 20%
@@ -65,11 +65,11 @@
 }
 
 .card-bar-chart > div > div {
-  width: 1.25rem;
+  width: var(--length-md2);
 }
 
 .card-bar-chart.is-gauge-chart > div > div {
-  width: 3rem;
+  width: var(--length-lg2);
 }
 
 .card-bar-primary {
@@ -96,8 +96,8 @@
 
 .avatar {
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: var(--length-lg2);
+  height: var(--length-lg2);
 }
 
 .avatar-title,
@@ -107,7 +107,7 @@
 }
 
 .avatar-title {
-  font-size: 1rem;
+  font-size: var(--length-md1);
   margin-bottom: 3px;
 }
 
@@ -118,27 +118,27 @@
 
 /* Timeline */
 .timeline {
-  padding-top: 1.25rem;
+  padding-top: var(--length-md2);
 }
 
 .timeline-row {
   position: relative;
   display: flex;
-  padding-bottom: 1rem;
+  padding-bottom: var(--length-md1);
 }
 
 .timeline-when {
   width: 3.5rem;
   min-width: 3.5rem;
   max-width: 3.5rem;
-  font-size: 0.75rem;
+  font-size: var(--length-sm3);
 }
 
 .timeline-badge {
-  width: 0.75rem;
-  min-width: 0.75rem;
-  max-width: 0.75rem;
-  height: 0.75rem;
+  width: var(--length-sm3);
+  min-width: var(--length-sm3);
+  max-width: var(--length-sm3);
+  height: var(--length-sm3);
   margin: 1.5px 0.5rem 0;
   border-radius: 50%;
   border: 3px solid var(--color-default);
@@ -166,4 +166,53 @@
 .timeline-text {
   color: var(--color-label);
   font-size: 0.875rem;
+}
+
+.dropdown-input {
+  position: absolute;
+  transform: scale(0);
+}
+
+.dropdown-label {
+  cursor: pointer;
+}
+
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  padding: var(--length-md1);
+  width: var(--length-xl3);
+  border-radius: var(--length-md1);
+  background: var(--color-background);
+  transform: translateY(var(--length-md1));
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.dropdown-input:checked ~ .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu-button {
+  display: block;
+  text-align: left;
+  width: 100%;
+  height: 2.5rem;
+  background: transparent;
+  border: 0;
+  padding: 0 var(--length-sm3);
+  border-radius: 2.5rem;
+  color: #f9f9f9;
+}
+
+.dropdown-menu-button:hover {
+  background: rgba(255, 255, 255, 0.1);
 }

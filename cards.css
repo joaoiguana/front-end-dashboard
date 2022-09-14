@@ -16,11 +16,11 @@
 .card-headline-icon {
   display: grid;
   place-items: center;
-  width: 3.5rem;
-  /* height: 3.5rem; */
+  width: var(--length-lg2);
+  height: var(--length-lg2 );
   border-radius: 50%;
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: var(--length-md3);
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -55,7 +55,7 @@
 .card-list {
   grid-area: list;
   display: flex;
-  gap: 1.75rem;
+  gap: var(--length-sm2);
 }
 /*
 @media only screen and (min-width: 800px) {
@@ -71,8 +71,8 @@
 }
 
 .card-list-badge {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: var(--length-sm3);
+  height: var(--length-sm3);
   border-radius: 50%;
 }
 
@@ -104,8 +104,8 @@
 
 .card-progress-donut {
   position: relative;
-  width: 8rem;
-  height: 8rem;
+  width: var(--length-xl2);
+  height: var(--length-xl2);
   margin: 0 auto;
   border-radius: 50%;
   background: conic-gradient(
@@ -124,6 +124,17 @@
   height: 85%;
   border-radius: inherit;
   background: var(--color-card);
+}
+
+.card-icon {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Growth Card */
@@ -148,7 +159,7 @@
 /* Regions Card */
 .card-regions {
   grid-area: regions;
-  padding: 1rem 1.5rem;
+  padding: var(--length-md1) var(--length-md3);
   text-align: center;
 }
 

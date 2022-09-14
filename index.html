@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="shared.css">
   </head>
   <body>
+    <div class="preloader">
+      <div class="spinner"></div>
+    </div>
+    <aside class="sidebar">
+      <span class="sidebar-top uil uil-adjust"></span>
+      <div class="sidebar-middle">
+        <span class="sidebar-top uil uil-plus"></span>
+        <span class="sidebar-top uil uil-tag"></span>
+        <span class="sidebar-top uil uil-bookmark"></span>
+      </div>
+      <span class="sidebar-bottom uil uil-setting"></span>
+    </aside>
     <div class="container">
       <div class="card card-headline card-headline1">
         <div>
@@ -172,7 +184,26 @@
           <h3 class="card-h3 no-bottom-margin">
             Authors
           </h3>
-          <span class="uil uil-ellipsis-v card-header-icon"></span>
+          <div class="dropdown-wrapper">
+            <input type="checkbox" class="dropdown-input" id="dropdown-input" />
+            <label class="dropdown-label" for="dropdown-input">
+              <span class="uil uil-ellipsis-v card-header-icon"></span>
+            </label>
+            <div class="dropdown-menu">
+              <button class="dropdown-menu-button">
+                Some Action
+              </button>
+              <button class="dropdown-menu-button">
+                Another Action
+              </button>
+              <button class="dropdown-menu-button">
+                Click Me
+              </button>
+              <button class="dropdown-menu-button has-divider">
+                Delete Item
+              </button>
+            </div>
+          </div>
         </header>
         <ul class="avatar-list">
           <li>
